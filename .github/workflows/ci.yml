@@ -2,7 +2,8 @@ name: Minimalne CI - plik tekstowy
 
 on:
   push:
-    branches: [ main ]
+    paths:
+      - 'src/**'
 
 jobs:
     echo-test:
