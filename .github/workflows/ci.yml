@@ -16,7 +16,13 @@ jobs:
         run: ls -la
 
       # - name: nowy krok zadanie 7
-        # run: npx eslint . --ext .js,.jsx,.ts,.tsx
+      #   run: npx eslint . --ext .js,.jsx,.ts,.tsx
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-output
+          path: dist/
         
       - name: Komunikat koncowy
         run: echo "GitHub Actions dziala poprawnie 🎉"
