@@ -1,1 +1,3 @@
 nowy plik na potrzeby: reset - revert
+
+polmylone linie do wywalenia
