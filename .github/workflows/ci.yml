@@ -1,12 +1,16 @@
-name: CI Pipeline
-on: [push]
+name: Minimalne CI - plik tekstowy
+
+on:
+  push:
+    branches: [ main ]
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-      - run: npm ci
-      - run: npm run build
+    echo-test:
+      runs-on: ubuntu-latest
+      steps:
+      - name: Checkout kodu
+        uses: actions/checkout@v3
+      - name: Wypisz zawartosc katalogu
+        run: ls -la
+      - name: Komunikat koncowy
+        run: echo "GitHub Actions dziala poprawnie 🎉"
