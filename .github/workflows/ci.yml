@@ -13,6 +13,9 @@ jobs:
 
       - name: Wypisz zawartosc katalogu
         run: ls -la
+
+      - name: nowy krok zadanie 7
+        run: npx eslint . --ext .js,.jsx,.ts,.tsx
         
       - name: Komunikat koncowy
         run: echo "GitHub Actions dziala poprawnie 🎉"
