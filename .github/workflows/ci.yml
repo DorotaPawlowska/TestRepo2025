@@ -10,7 +10,9 @@ jobs:
       steps:
       - name: Checkout kodu
         uses: actions/checkout@v3
+
       - name: Wypisz zawartosc katalogu
         run: ls -la
+        
       - name: Komunikat koncowy
         run: echo "GitHub Actions dziala poprawnie 🎉"
